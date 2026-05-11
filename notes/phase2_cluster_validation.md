@@ -22,7 +22,8 @@ prediction on a real cluster, while also quantifying that RAPID is not
 yet a reliable age estimator for individual young (~100 Myr) A stars.
 
 ## Caveats / sample weaknesses
-- Sample size of 4 clean A stars is too small for a publication-grade
+- Sample size is small (two clean A-dwarfs plus two edge/comparison
+  cases), so this is a diagnostic validation, not yet a publication-grade
   calibration. Need to expand.
 - Luminosities for cluster A-stars were drawn from a mix of older
   sources (Stauffer+98, TIC v8.2) and should be re-derived uniformly
@@ -43,15 +44,28 @@ yet a reliable age estimator for individual young (~100 Myr) A stars.
 - HD 28910 (A4V, 1.70 M_sun): age 225 (-152, +228) Myr, ~400 Myr too young
 - theta^2 Tau (near MS turnoff): 563 (-46, +57) Myr, matches truth
 
-### Combined with Pleiades
-Across both clusters, the clean A-dwarfs collapse toward a ~250-300 Myr
-value regardless of true age:
+## Phase 2 Step 3: Alpha Per
+
+### Headline finding
+- Four clean A-dwarfs in alpha Per (adopting 90 +/- 10 Myr from the
+  Stauffer+99 LDB age) return RAPID-style median ages of 348, 379, 386,
+  and 397 Myr.
+- This independently repeats the young-cluster old-bias seen in the
+  Pleiades, with a larger offset because alpha Per is younger.
+
+### Combined three-cluster picture
+Across all three clusters, the clean A-dwarfs collapse toward a
+~250-400 Myr value regardless of true age:
+- Alpha Per A-dwarfs (truth ~90 Myr): inferred ~350-400 Myr
 - Pleiades A-dwarfs (truth 125 Myr): inferred ~300 Myr (+175 Myr bias)
 - Hyades A-dwarfs   (truth 625 Myr): inferred ~280 Myr (-345 Myr bias)
 The bias flips sign because the inference is collapsing toward the
 prior-weighted mean A-star MS age, not respecting the true age.
 
-The only two stars that recover the cluster age are:
+Numerically, the eight clean A-dwarfs span 225-397 Myr in inferred age
+(a factor of 1.8), with seven of eight lying in the 250-400 Myr band.
+
+The two cases that recover the cluster age within uncertainties are:
 - HD 23642 (Pleiades EB, binary-corrected input): tight grid of bin_*
   models maps Teff/L to the right age
 - theta^2 Tau (Hyades near-turnoff): rapid evolution makes HR-diagram

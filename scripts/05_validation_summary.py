@@ -1,5 +1,5 @@
 ﻿"""
-Two-cluster validation summary: RAPID inferred age vs known cluster age.
+Three-cluster validation summary: RAPID inferred age vs known cluster age.
 Run from repo root:  python scripts\05_validation_summary.py
 """
 import numpy as np, pandas as pd
@@ -15,7 +15,7 @@ CLUSTERS = {
                      jitter_halfwidth=35.0),
     "hyades":   dict(age=625.0, age_err=50.0, label="Hyades",
                      jitter_halfwidth=55.0),
-    "alphaper": dict(age= 85.0, age_err=10.0, label="alpha Per",
+    "alphaper": dict(age= 90.0, age_err=10.0, label="alpha Per",
                      jitter_halfwidth=22.0),
 }
 

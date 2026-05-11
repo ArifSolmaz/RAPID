@@ -16,8 +16,10 @@
 
 ## What the reweighting recovers
 
-- [Fe/H] histogram peak: implemented ~10, reweighted ~6.6,
-  intended Gaussian ~2.66.
+- [Fe/H] histogram peak in the 80-bin diagnostic plot: implemented ~10,
+  reweighted ~6.6, intended Gaussian ~2.66. The exact peak density is
+  binning-dependent because the original Z grid is discrete, but the
+  depressed-tail conclusion is not.
 - Reweighting closes about half the gap. The rest is unrecoverable because
   the population contains essentially zero surviving samples at
   |[Fe/H]| > 0.3. A full fix requires regenerating with proper Gaussian

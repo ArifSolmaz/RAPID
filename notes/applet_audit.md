@@ -39,7 +39,8 @@ that class.
      Naming bug, math correct.
    - Inverse-square: W = 0.25/d^2 for d > 0.5, capped at W = 1.0 for
      d <= 0.5. Paper footnote 9 says cap at d=0.5 giving W=4 with norm
-     1/4. Code's cap is 1.0, not 4. Discrepancy worth flagging.
+     1/4. The code appears to implement the normalised form directly, so
+     this is a documentation/notation point rather than a science bug.
 
 3. **Truncation**:
    - KDE for mass and age uses all samples with d <= 10 (comment line
@@ -101,8 +102,8 @@ From no_binaries.feather:
 
 ## Open questions for Simon
 
-- Is inverse-square 0.25/d^2 capped at W=1.0 intended, or was it meant
-  to be 1/d^2 capped at W=4 per paper footnote 9?
+- Can the inverse-square footnote explicitly state that the code uses the
+  normalised 0.25/d^2 form capped at W=1.0?
 - Was the d <= 10 window for mass/age KDEs deliberate, or is the
   paper's d <= 3 the intended cut?
 - Why does update_mahalanobis_fill paint with exp(-d^4/2) while the
