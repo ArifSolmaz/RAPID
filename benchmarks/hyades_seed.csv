@@ -1,0 +1,7 @@
+﻿name,sptype,teff_K,teff_err_K,lum_Lsun,lum_err_Lsun,source_note
+theta2 Tau (HD 28319),A7III,7800,180,84,12,brightest Hyades A; near or past turnoff; likely off-grid
+60 Tau (HD 27628),A3m,8300,180,13,2,clean A-dwarf; Perryman+98
+79 Tau (HD 28355),A7V,7600,150,8,1.5,clean late-A; Perryman+98
+80 Tau (HD 28485),F0V,7300,150,5,1.0,low-mass grid edge
+HD 28910,A4V,8400,180,10,1.5,Hyades member; mid-A dwarf
+HD 28527 (V713 Tau),A6V,7800,160,8,1.2,Hyades dwarf member
