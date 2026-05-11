@@ -1,0 +1,13 @@
+name,sptype,teff_K,teff_err_K,lum_Lsun,lum_err_Lsun,source_note
+HII 1117,A0V,9800,200,52,8,Stauffer+98 / Gaia DR3 parallax
+Electra (17 Tau),B6IIIe,12300,250,940,90,bright Be star; flag as fast rotator
+Maia (20 Tau),B7III,12550,250,660,60,Be candidate
+Merope (23 Tau),B6IVe,12450,250,630,60,Be candidate
+Alcyone (25 Tau),B7IIIe,12400,250,2400,250,brightest Pleiad; B-star edge of grid
+Atlas (27 Tau),B8III,12000,240,1100,100,B-star; check whether in mass range
+Pleione (28 Tau),B8IVpe,12000,240,1100,100,known Be shell star
+HD 23642,A0V+A,9962,200,33,5,EB; Southworth+23; primary properties only
+HD 23631,A1V,9100,180,28,4,Pleiades member
+HD 23289,A2V,8800,180,22,3,Pleiades member
+HD 23375,A7V,7700,150,9,1.5,Pleiades member
+HD 23512,F0V,7300,150,7,1,Pleiades member; lower-mass edge
