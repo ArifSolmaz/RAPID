@@ -12,6 +12,7 @@ from matplotlib.patches import Patch, Rectangle
 ROOT = Path(__file__).resolve().parents[1]
 BENCH = ROOT / "benchmarks"
 FIGS = ROOT / "figures"
+FIGS.mkdir(parents=True, exist_ok=True)
 
 CLUSTERS = {
     "alphaper": dict(age=90.0, age_err=10.0, label=r"$\alpha$ Per",
@@ -44,8 +45,8 @@ cluster_names = list(CLUSTERS)
 x_centres = np.arange(len(cluster_names), dtype=float)
 
 ax.axhspan(250, 400, color="#E6B450", alpha=0.16, zorder=-5, lw=0)
-ax.text(-0.45, 388, "prior-attractor band", color="#9A6200",
-        fontsize=8, va="top", ha="left")
+ax.text(-0.45, 262, "prior-dominated mid-MS band", color="#9A6200",
+        fontsize=8, va="bottom", ha="left")
 
 for x0, cname in zip(x_centres, cluster_names):
     c = CLUSTERS[cname]
@@ -117,7 +118,7 @@ legend_handles = [
     Patch(facecolor="#5AA469", edgecolor="none", alpha=0.22,
           label="independent cluster age"),
     Patch(facecolor="#E6B450", edgecolor="none", alpha=0.22,
-          label="250-400 Myr attractor band"),
+          label="250-400 Myr mid-MS band"),
     Line2D([0], [0], marker="o", color="none", markerfacecolor="#2F6F9F",
            markeredgecolor="white", markeredgewidth=0.55, markersize=5.5,
            label="clean mid-MS A dwarf"),
