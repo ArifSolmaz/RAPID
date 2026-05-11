@@ -15,22 +15,26 @@ CLUSTERS = {
                      jitter_halfwidth=35.0),
     "hyades":   dict(age=625.0, age_err=50.0, label="Hyades",
                      jitter_halfwidth=55.0),
+    "alphaper": dict(age= 85.0, age_err=10.0, label="alpha Per",
+                     jitter_halfwidth=22.0),
 }
 
 fig, ax = plt.subplots(figsize=(9, 6.5))
 
 # cluster age bands (vertical)
+label_offsets = {"alphaper": (-22, "right"), "pleiades": (+22, "left"), "hyades": (0, "center")}
 for cname, c in CLUSTERS.items():
     ax.axvspan(c["age"] - c["age_err"], c["age"] + c["age_err"],
                color="green", alpha=0.10, zorder=-2)
     ax.axvline(c["age"], color="green", lw=0.8, alpha=0.6, zorder=-1)
-    ax.text(c["age"], 1040, c["label"], ha="center", va="bottom",
+    dx, ha = label_offsets.get(cname, (0, "center"))
+    ax.text(c["age"] + dx, 1040, c["label"], ha=ha, va="bottom",
             color="darkgreen", fontsize=10, fontweight="bold")
 
 # attractor band (horizontal)
-ax.axhspan(250, 320, color="gold", alpha=0.18, zorder=-1)
-ax.text(950, 285, "~250-300 Myr attractor", color="darkgoldenrod",
-        fontsize=9, va="center", ha="right")
+ax.axhspan(250, 400, color="gold", alpha=0.18, zorder=-1)
+ax.text(400, 410, "RAPID prior-mean attractor (~250-400 Myr, weakly Teff-dependent)",
+        color="darkgoldenrod", fontsize=9, va="bottom", ha="center")
 
 # loop over clusters and plot
 all_handles = {"clean": None, "edge": None}

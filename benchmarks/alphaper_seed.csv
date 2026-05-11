@@ -1,0 +1,7 @@
+﻿name,sptype,teff_K,teff_err_K,lum_Lsun,lum_err_Lsun,source_note
+HD 21551,A3V,8500,180,20,3,alpha Per member; Mermilliod
+HD 21931,A2V,8700,180,25,4,alpha Per member; Mermilliod
+HD 22401,A2V,8600,180,22,3,alpha Per member; Mermilliod
+HD 22136,A4V,8400,180,15,2,alpha Per member; mid-A
+29 Per (HD 19374),B5V,14500,300,500,80,B-star; off-grid (sanity check)
+delta Per (HD 22928),B5III,14000,300,1600,200,bright giant; off-grid (sanity check)

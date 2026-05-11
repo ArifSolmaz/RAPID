@@ -12,6 +12,8 @@ CLUSTERS = {
                      ref="Stauffer+98 (LDB)"),
     "hyades":   dict(age=625.0, age_err=50.0, csv="hyades_seed.csv",
                      ref="Perryman+98"),
+    "alphaper": dict(age= 85.0, age_err=10.0, csv="alphaper_seed.csv",
+                     ref="Stauffer+99 (LDB)"),
 }
 
 ROOT = Path(__file__).resolve().parents[1]
