@@ -1,5 +1,16 @@
 # RAPID: Rotation-Aware Probabilistic Inference Dashboard
 
+## Status note for the `validation-and-sensitivity` branch
+
+This branch documents an independent audit of the public RAPID version and manuscript version available to me in May 2026, together with cluster-validation and sensitivity-check scripts.
+
+The authors have since confirmed that the critical-rotation Eq. 10/prose issue and the metallicity-prior implementation issue have been addressed in their revision. The materials in this branch should therefore be read as validation notes for the version I tested, not as a statement about the current manuscript, revised applet, or regenerated synthetic populations.
+
+The cluster-validation scripts remain useful as an independent benchmark workflow and can be rerun on revised populations if/when they become available.
+
+This is an independent fork/branch and is not the official RAPID release.
+
+
 RAPID is an interactive applet for inferring stellar parameters from synthetic populations of rapidly rotating intermediate-mass stars.
 
 The synthetic populations presented here cover stars with masses of roughly 1.4 to 2.5 $M_\odot$ and include the effects of rotation, inclination, unresolved binarity, metallicity variation, and observational uncertainty. Given a target star's effective temperature and luminosity, RAPID estimates posterior distributions for mass, age, and other stellar properties.
